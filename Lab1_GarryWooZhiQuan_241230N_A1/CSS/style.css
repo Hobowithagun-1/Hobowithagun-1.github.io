@@ -1,0 +1,840 @@
+body{
+  margin:0px;
+  background-color:#F0FFF0;
+}
+        
+main#topmain{
+    background:green;
+    display:inline-block;
+    width:100%;
+     padding-top:60px;
+}
+main#WhatIdo{
+  display:inline-block;
+  width:100%;
+}
+header#WhatIdoTitle{
+  display:inline-block;
+  width:20%;
+  padding-left:14%;
+  position:absolute;
+  right:15px;
+  
+}
+p#WhatIdoDescription{
+  display:inline-block;
+  width:60%;
+  margin-top:7%;
+  font-size:29px;
+  text-align:center;
+  
+}
+header#MyeducationTitle{
+  display:inline-block;
+  width:28%;
+  padding-left:5%;
+}
+p#Myeducation{
+  display:inline-block;
+  width:50%;
+  font-size:26px;
+  text-align:center;
+  margin-bottom:auto;
+  padding-left:19%;
+}
+
+
+header#myhobbiesTitle{
+  display:inline-block;
+  width:20%;
+  padding-left:14%;
+  position:absolute;
+  right:15px;
+}
+main#myeducation{
+  display:inline-block;
+  width:100%;
+}
+main#myhobbies{
+  display:inline-block;
+  width:100%;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position:fixed;
+    padding-right:77%;
+    z-index:100;
+    width:100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 19px 25px;
+    text-decoration: none;
+    font-size: 17px;
+   
+  }
+  header{
+    font-size: 60px;
+    font-family: sans-serif;
+    padding:20px
+  }
+  section#top{
+    font-size :30px;
+    font-family: sans-serif;
+    padding:20px;
+    width:35%;
+  }
+
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #7a7a7a;
+    color: white;
+  }
+ button:hover {
+    background-color: #000000; /* change to your desired color */
+    color: #dfdb16; /* change to your desired color */
+  }
+  /* for the button customization */
+  .button {
+    background-color: #dfdb16;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 30px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    margin-left: 25px;
+    font-weight: 400;
+    font-style: normal;
+    transition:color 2s;
+  }
+
+ 
+div{
+  padding-left:25px;
+}
+#nerd{
+  font-family:sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+footer{
+  background-color:black;
+  width:100%;
+  margin-bottom:auto;
+}
+p#footer{
+  color:white;
+}
+header#aboutme{
+  text-align:center;
+  margin-bottom:3%;
+}
+main#Beggining{
+  background-color: #000000;
+  width:100%;
+}
+main#Babysteps{
+  background-color:yellow;
+
+}
+header#Babysteps{
+  display:inline-block;
+  padding-left:30%;
+  
+}
+p#Mybabysteps{
+  display:inline-block;
+  font-size:26px;
+  text-align:center;
+  margin-bottom:auto;
+  padding-left:5%;
+  width:80%;
+  
+}
+p#Family{
+  display:inline-block;
+  font-size:30px;
+  text-align:center;
+  margin-top:auto;
+  width:70%;
+  margin-top:13%;
+}
+/* Divides the screen into 3 to put the stuff into each space more easily */
+.gridcontainer {
+ display: grid; grid-template-columns: 1fr  1fr  1fr; 
+ 
+}
+.item1{
+  grid-column:1/2;
+}
+.item2{
+  grid-column:2/4;
+}
+.item3{
+  grid-column:3/4;
+}
+.item4{
+  grid-column:1/3;
+}
+.item5{
+  grid-column:2/3;
+}
+
+/* Another grid container for later RWD */
+.gridcontainer2 {
+ display: grid; grid-template-columns: 1fr  1fr  1fr; 
+ 
+}
+.item1{
+  grid-column:1/2;
+}
+.item2{
+  grid-column:2/4;
+}
+.item3{
+  grid-column:3/4;
+}
+.item4{
+  grid-column:1/3;
+}
+.item5{
+  grid-column:2/3;
+}
+header#Family{
+  display:inline-block;
+  text-align: center;
+  width:97%;
+}
+.edu{
+  text-align: center;
+  margin-top:100px;
+  margin-left:100px;
+}
+main#edu{
+  margin-bottom:5%;
+}
+table, th{
+  border:1px solid black;
+  
+}
+main#topmainHobbies{
+      background:rgb(255, 236, 129);
+    display:inline-block;
+    width:100%;
+     padding-top:60px;
+}
+section#Hobbyramble{
+  display:inline-block;
+  text-align: center;
+
+  width:100%;
+  font-size:50px;
+}
+#job{
+  display:inline-block;
+  text-align: center;
+  width:100%;
+  font-size:50px;
+}
+#Hobbystuff{
+  text-align:center;
+  margin-bottom:3%;
+  font-size:40px;
+}
+p#hobby{
+  text-align:center;
+  margin-bottom:3%;
+  font-size:30px;
+  width:80%;
+  align-content: center;
+  padding-left:50px;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} 
+.Nerdimage{
+  float:left; padding-left:6%;
+}
+.garrymugshot{
+   position:absolute; padding-left:55%; margin-top:-11%; height:27%; width:17%;
+}
+.garryoop{
+  float:right; padding-top:100px; padding-right:50px; height:25%; width:25%
+}
+.garrybaby{
+  padding-left:70px; height:80%; width:70%;
+}
+.garryprimary{
+  height:70%;width:80%; margin-left:-5%;
+}
+.wizardoftx5{
+  padding-left: 50px;
+}
+.familyphotos{
+  height: 60%; width:60%;
+}
+.nanyangprimary{
+  height:50%; width:50%; margin-left:70px; margin-top:30px;
+}
+.riversidesec{
+  height:50%; width:50%; margin-left:80px;
+}
+.NYP{
+  height:50%; width:50%; margin-left:100px; margin-top:30px;
+}
+.NYPTEXT{
+  margin-left:20%;
+}
+.malumceodo{
+  float:right; padding-top:100px; padding-right:7%;
+}
+.strikesquad{
+  height:40%; width:90%;
+}
+.kaldordraigo{
+  height:60%; width:90%;
+}
+.warhammerpainting{
+  height:60%; width:100%;
+}
+p#strikebox{
+  text-align:center;
+  margin-bottom:3%;
+  font-size:30px;
+  width:80%;
+  padding-left:50px;
+
+}
+p#pasta{
+    text-align:center;
+  margin-bottom:3%;
+  font-size:30px;
+  width:100%;
+  overflow:hidden;
+  align-content: center;
+}
+p#Primaryschool{
+    display:inline-block;
+  font-size:26px;
+  text-align:center;
+  margin-bottom:auto;
+  padding-left:5%;
+  width:80%;
+}
+
+@media (max-width: 1280px){
+  main#topmain{
+    background:green;
+    display:inline-block;
+    width:100%;
+     padding-top:60px;
+}
+.garrymugshot{
+   position:absolute; padding-left:50%; margin-top:-20%; height:27%; width:27%;
+}
+main#WhatIdo{
+  display:inline-block;
+  width:100%;
+}
+header#WhatIdoTitle{
+  display:inline-block;
+  width:30%;
+  padding-right:30%;
+  position:absolute;
+  right:15px;
+  
+}
+p#WhatIdoDescription{
+  display:inline-block;
+  width:60%;
+  margin-top:10%;
+  font-size:29px;
+  text-align:center;
+  
+}
+header#MyeducationTitle{
+  display:inline-block;
+  width:30%;
+  padding-left:35%;
+}
+p#Myeducation{
+  display:inline-block;
+  width:50%;
+  font-size:26px;
+  text-align:center;
+  padding-left:46%;
+  margin-top:-30%;
+  margin-bottom:10%;
+}
+
+header#myhobbiesTitle{
+  display:inline-block;
+  width:30%;
+  padding-right:30%;
+  
+  position:absolute;
+  right:15px;
+}
+main#myeducation{
+  display:inline-block;
+  width:100%;
+}
+p#Primaryschool{
+    display:inline-block;
+    position:absolute;
+  font-size:26px;
+  text-align:center;
+  margin-bottom:auto;
+  padding-left:50%;
+  width:40%;
+}
+main#myhobbies{
+  display:inline-block;
+  width:100%;
+}
+ section#top{
+    font-size :30px;
+    font-family: sans-serif;
+    padding:19px;
+    width:35%;
+  }
+  header#aboutme{
+  text-align:center;
+  margin-bottom:3%;
+}
+main#Beggining{
+  background-color: #000000;
+  width:100%;
+}
+main#Babysteps{
+  background-color:yellow;
+}
+.garrybaby{
+  padding-left:0px; height:80%; width:90%;
+}
+header#Babysteps{
+  display:inline-block;
+  padding-left:15%;
+  width:70%;
+
+}
+p#Mybabysteps{
+  display:inline-block;
+  font-size:26px;
+  text-align:center;
+  margin-bottom:auto;
+  padding-left:5%;
+  width:80%;
+  
+}
+.garryprimary{
+  height:70%;width:90%; margin-left:-10%;
+}
+.wizardoftx5{
+ padding-left:0px;
+}
+.familyphotos{
+  height: 80%; width:80%;
+}
+p#Family{
+  display:inline-block;
+  font-size:30px;
+  text-align:center;
+  margin-top:auto;
+  width:70%;
+  margin-top:13%;
+}
+.gridcontainer {
+ display: grid; grid-template-columns: 1fr  1fr  1fr; 
+ 
+}
+.item1{
+  grid-column:1/2;
+}
+.item2{
+  grid-column:2/4;
+}
+.item3{
+  grid-column:3/4;
+}
+.item4{
+  grid-column:1/3;
+}
+.item5{
+  grid-column:2/3;
+}
+.gridcontainer2 {
+ display: grid; grid-template-columns: 1fr 1fr; 
+ 
+}
+.item1{
+  grid-column:1/2;
+}
+.item3{
+  grid-column:1/3;
+}
+.item5{
+  grid-column:2/3;
+}
+header#Family{
+  display:inline-block;
+  text-align: center;
+  width:96%;
+}
+.edu{
+  text-align: center;
+  margin-top:100px;
+  margin-left:30%;
+}
+.nanyangprimary{
+  height:50%; width:50%; margin-left:150px; margin-top:30px;
+}
+.primaryschooltext{
+  padding-left:150px;
+}
+.riversidesec{
+  height:50%; width:50%; margin-left:150px;
+}
+.NYP{
+  height:50%; width:50%; margin-left:25%; margin-top:30px;
+}
+.NYPTEXT{
+  margin-left:35%;
+}
+.Timetable{
+ padding-right:425px
+}
+.strikesquad{
+  height:60%; width:50%; padding-left:25%;
+}
+main#topmainHobbies{
+      background:rgb(255, 236, 129);
+    display:inline-block;
+    width:100%;
+     padding-top:60px;
+}
+section#Hobbyramble{
+  display:inline-block;
+  text-align: center;
+  width:97%;
+  font-size:50px;
+ 
+}
+/* for most credit stuff */
+p#credits{
+  padding-left:200px;
+}
+header#Hobbystuff{
+  text-align:center;
+  margin-bottom:3%;
+  font-size:40px;
+}
+p#hobby{
+  text-align:center;
+  margin-bottom:3%;
+  font-size:30px;
+  width:80%;
+  align-content: center;
+  padding-left:50px;
+}
+p#strikebox{
+  text-align:center;
+  margin-bottom:3%;
+  font-size:30px;
+  width:80%;
+  align-content: center;
+  padding-left:130px;
+}
+p#pasta{
+    text-align:center;
+  margin-bottom:3%;
+  font-size:30px;
+  width:80%;
+  align-content: center;
+padding-left:100px;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} 
+}
+/* FOR HANDPHONE SCREEN */
+@media (max-width: 768px){
+  main#topmain{
+    background:green;
+    display:inline-block;
+    width:100%;
+     padding-top:60px;
+}
+.garrymugshot{
+   position:absolute; padding-left:35%; margin-top:-25%; height:30%; width:27%;
+}
+main#WhatIdo{
+  display:inline-block;
+  width:100%;
+}
+header#WhatIdoTitle{
+  display:inline-block;
+  width:50%;
+  padding-right:23%;
+  right:15px;
+  text-align:center;
+  
+}
+p#WhatIdoDescription{
+  display:inline-block;
+  width:90%;
+  margin-top:13%;
+  padding-left:5%;
+  font-size:29px;
+  text-align:center;
+  
+}
+.garryoop{
+  padding-top:10px; padding-right:180px; height:50%; width:50%
+}
+.malumceodo{
+ padding-top:20px; padding-right:37%;
+}
+header#MyeducationTitle{
+  display:inline-block;
+  width:50%;
+  margin-left:-8%;
+  text-align:center;
+}
+p#Myeducation{
+  display:inline-block;
+  width:70%;
+  font-size:26px;
+  text-align:center;
+  padding-left:15%;
+  margin-top:0%;
+}
+.Nerdimage{
+  margin-top:30px; margin-left:190px; height:40%; width:40%
+}
+header#myhobbiesTitle{
+  display:inline-block;
+  width:40%;
+  text-align:center;
+  padding-right:30%;
+  position:absolute;
+}
+main#myeducation{
+  display:inline-block;
+  width:100%;
+}
+p#Primaryschool{
+  display:inline-block;
+  position:absolute;
+  font-size:26px;
+  text-align:center;
+  margin-bottom:auto;
+  padding-left:50%;
+  width:40%;
+}
+main#myhobbies{
+  display:inline-block;
+  width:100%;
+}
+ section#top{
+    font-size :30px;
+    font-family: sans-serif;
+    padding:10px;
+    width:35%;
+  }
+  header#aboutme{
+  text-align:center;
+  margin-bottom:3%;
+}
+main#Beggining{
+  background-color: #000000;
+  width:100%;
+}
+main#Babysteps{
+  background-color:yellow;
+}
+.garrybaby{
+height:80%; width:90%;
+}
+header#Babysteps{
+  display:inline-block;
+  width:100%;
+
+}
+p#Mybabysteps{
+  display:inline-block;
+  font-size:26px;
+  text-align:center;
+  
+  width:80%;
+  
+}
+.garryprimary{
+  height:60%;width:70%; margin-left:-10%;
+}
+.wizardoftx5{
+ padding-left:0px;
+}
+.familyphotos{
+  height: 80%; width:80%;
+}
+p#Family{
+  display:inline-block;
+  font-size:30px;
+  text-align:center;
+  margin-top:auto;
+  width:70%;
+  margin-top:30%;
+}
+.gridcontainer {
+ display: grid; grid-template-columns: 1fr  1fr  1fr; 
+ 
+}
+.item1{
+  grid-column:1/2;
+}
+.item2{
+  grid-column:2/4;
+}
+.item3{
+  grid-column:3/4;
+}
+.item4{
+  grid-column:1/3;
+}
+.item5{
+  grid-column:2/3;
+}
+.gridcontainer2 {
+ display: grid; grid-template-columns:1fr; 
+ 
+}
+.item1{
+  grid-column:1/2;
+}
+.item3{
+  grid-column:1/2;
+}
+.item5{
+  grid-column:1/2;
+}
+header#Family{
+  display:inline-block;
+  text-align: center;
+  max-width:94%;
+}
+.edu{
+  text-align: center;
+  margin-top:100px;
+  margin-left:30%;
+}
+.nanyangprimary{
+  height:50%; width:50%; margin-left:150px; margin-top:30px;
+}
+.primaryschooltext{
+  padding-left:150px;
+}
+.riversidesec{
+  height:50%; width:50%; margin-left:150px;
+}
+.NYP{
+  height:50%; width:50%; margin-left:25%; margin-top:30px;
+}
+.NYPTEXT{
+  margin-left:27%;
+}
+.Timetable{
+ padding-right:20px
+}
+.strikesquad{
+  height:60%; width:70%; padding-left:15%;
+}
+.kaldordraigo{
+  height:60%; width:70%; padding-left:15%;
+}
+p#credits{
+  padding-left:100px;
+}
+main#topmainHobbies{
+      background:rgb(255, 236, 129);
+    display:inline-block;
+    width:100%;
+     padding-top:60px;
+}
+section#Hobbyramble{
+  display:inline-block;
+  text-align: center;
+  width:30%;
+  font-size:50px;
+  padding-left:250px;
+  padding-top:50px;
+}
+#Hobbystuff{
+  text-align:center;
+  margin-bottom:3%;
+  font-size:40px;
+  padding-top:25px;
+}
+p#hobby{
+  text-align:center;
+  margin-bottom:3%;
+  font-size:30px;
+  width:80%;
+  align-content: center;
+  padding-left:65px;
+}
+.warhammerpainting{
+  height:60%; width:80%; padding-left:60px; padding-bottom:25px;
+}
+p#strikebox{
+  text-align:center;
+  margin-bottom:3%;
+  font-size:30px;
+  width:80%;
+  align-content: center;
+  padding-left:60px;
+}
+.video{
+  margin-left:-60%;
+}
+p#pasta{
+  text-align:center;
+  margin-bottom:3%;
+  font-size:30px;
+  width:70%;
+  padding-right:100px;
+  align-content: center;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} 
+#job{
+  display:inline-block;
+  text-align: center;
+  width:100%;
+  font-size:50px;
+}
+}
