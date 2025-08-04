@@ -1,0 +1,636 @@
+body {
+  background-color: white;
+   font-family:'CRIMSON_WAVE'; 
+}
+@font-face {
+ font-family: 'CRIMSON_WAVE';
+ src: url(fonts/CrimsonText-Regular.ttf) format('truetype');
+ font-weight:normal;
+ font-style:normal;
+}
+
+.button_screen{
+  
+   color: #000000;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index:99; 
+}
+.topnav button {
+  color: #000000;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.Buttontop {
+  padding-left: 25px;
+}
+
+#List_Button{
+   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+Main {
+  background-image: url(images/WW1_Trench);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding-top: 240px;
+  padding-bottom: 240px;
+}
+
+#Buffer {
+  background-image: url(images/WW1_Trench);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+header#headerText {
+  font-size: 80px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 5%;
+  width: 25%;
+  background-color: #000000;
+}
+#Garry_Woo_Made_This{
+  font-size: 20px;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 100px;
+}
+
+article {
+  width: 50%;
+  text-align: center;
+  font-size: 40px;
+  padding-left: 25%;
+  padding-top:5%;
+}
+
+h1#Second_Header {
+  width: 50%;
+  padding-top: 150px;
+  padding-left: 5%;
+}
+
+article#Second_Article {
+  padding-left: 5%;
+}
+
+#Map {
+  padding-left: 65%;
+  margin-top: -15%;
+}
+
+p#ImageCredits {
+  padding-left: 65%;
+}
+
+.Image_Left {
+  margin-top: -20%;
+  padding-left: 10%;
+  padding-bottom: 10%;
+}
+
+article.Text_Right {
+  padding-left: 40%;
+}
+
+#credit_Franz {
+  margin-top: -9%;
+  padding-left: 9%;
+}
+
+article.Text_Left {
+  padding-left: 5%;
+  padding-top: 10%;
+}
+
+.Image_Right {
+  padding-left: 65%;
+  margin-top: -20%;
+  width: 25%;
+  height: 25%;
+}
+
+#credit_Map_Europe {
+  padding-left: 65%;
+}
+
+#Fifth_Article {
+  padding-bottom: 200px;
+}
+
+#Evolution {
+  background-color: #f7fc00;
+  width: 50%;
+  margin-left: 25%;
+text-align: center;
+}
+
+h1#Fifth_Header {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+#Evolution_Button {
+  color: #000000;
+  text-align: center;
+  margin-left: 50%;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#Noteworthy_Header{
+  margin-top:-15%;
+}
+
+#Noteworthy_Image {
+  width: 50%;
+  padding-bottom: 3em;
+}
+#Noteworth_Descriptiion{
+  font-size:30px;
+ 
+}
+#Bar{
+  height:60px;
+  width:80%;
+  margin-left:10%;
+  background-color: gray;
+  margin-bottom: 10px;
+  align-content: center;
+}
+
+#Inner_Bar{
+  width:0%;
+  height:100%;
+  background-color: green;
+}
+#Blockades{
+  padding-left:15%;
+  margin-bottom:5%;
+}
+#Blockade_Map{
+  width:22%;
+padding-left:70%;
+margin-top:-25%;
+margin-bottom:5%;
+}
+.Trenches{
+  margin-top:2%;
+}
+#Trench_Overhead{
+  margin-top:2%;
+  width:30%;
+  padding-left:35%;
+}
+#Trench_Why{
+  padding-left:50%;
+  width:40%;
+  margin-top:10%;
+}
+#Trench_Dudes{
+margin-top:-20%;
+padding-left:15%;
+width:20%;
+}
+#Trench_Dudes_Under{
+  padding-left:15%;
+}
+#Man_Gun_Description{
+  padding-left:70%;
+}
+#Artillery{
+  padding-top:2%;
+}
+#Creeping_Barrage{
+  padding-top:10%;
+}
+.Header_Left{
+  padding-right:35%;
+  margin-bottom:-7%;
+}
+.Header_Right{
+  padding-left:35%;
+
+}
+#Winchester{
+  margin-top:2%;
+}
+#Trench_Gun{
+  margin-left:-5%;
+}
+#German_Protest{
+  margin-top:5%;
+}
+.Center{
+  padding-left:40%;
+}
+#Big_Willie{
+  margin-top:3%;
+}
+#Big_Willie_Size{
+  width:25%;
+  margin-left:-3%;
+}
+#Zeppilin{
+  width:25%;
+  margin-left:-3%;
+}
+
+#Game_Section{
+  background-color: #9E694A;
+  width:1700px;
+  height:650px;
+  margin:auto;
+}
+
+
+#Quiz_Section{
+  width:50%;
+  margin-left: 25%;
+  text-align: center;
+  background-color: #9E694A;
+}
+.Answer_btn{
+  width:100%;
+  height:60px;
+  border:1px solid black;
+  padding:10px;
+  margin:10px 0;
+  text-align:left;
+  border-radius:4px;
+  cursor: pointer;
+  transition:all 0.9s;
+}
+.Answer_btn:hover:not([disabled]){
+  height:100px;
+  background-color: #000000;
+  color:white;
+}
+.btn:disabled{
+  cursor:no-drop;
+}
+#Next_Question{
+   background-color: #4A7F9E;
+  color: white;
+  font-weight:500;
+  width:150px;
+  border:0;
+  padding:10px;
+  margin:20px auto 0;
+  border-radius:4px;
+  cursor:pointer;
+  display:none;
+}
+.Correct{
+  background-color:#40f75e;
+}
+.Incorrect{
+  background-color:#ff2f2f;
+}
+#Shooting_Game_h1{
+  padding-top:20%;
+  display:block;
+}
+#Shooting_Game_Start{
+  color: #000000;
+  background-color: #f7fc00;
+  text-align: center;
+  padding: 50px 200px;
+  font-size: 40px;
+  margin-left:37%;
+  display:block;
+  transition:all 0.5s;
+}
+#Shooting_Game_Start:hover{
+  color: #f7fc00;
+  background-color: #000000;
+  text-align: center;
+  padding: 60px 210px;
+  font-size: 40px;
+  margin-left:36.5%;
+  display:block;
+}
+#Target{
+  display:none;
+  width:10%;
+  position:relative;
+}
+#Medic{
+  display:none;
+  width:10%;
+  position:relative;
+}
+#Shooting_Score{
+  display:none;
+}
+#Timer{
+display:none;
+}
+@media(max-width:800px){
+.topnav button {
+  color: #000000;
+  text-align: center;
+  padding: 4px 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.Buttontop {
+  padding-left: 5px;
+}
+  header#headerText {
+  margin:auto;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5%;
+  width: 55%;
+  background-color: #000000;
+}
+#Garry_Woo_Made_This{
+  font-size: 20px;
+}
+h1 {
+  text-align: center;
+  font-size: 35px;
+  padding-top: 100px;
+}
+
+article {
+  width: 75%;
+  text-align: center;
+  font-size: 20px;
+  padding-left: 0%;
+  padding-top:5%;
+   margin:auto;
+}
+
+h1#Second_Header {
+  width: 50%;
+  margin:auto;
+}
+
+article#Second_Article {
+  padding-left: 0%;
+}
+
+#Map {
+  padding-left:25%;
+  margin-left: 7%;
+  margin-top: 0%;
+  width:35%;
+}
+
+p#ImageCredits {
+  padding-left: 40%;
+}
+
+.Image_Left {
+  padding-left: 30%;
+  padding-bottom: 10%;
+  margin-top: -20%;
+  height:45%;
+  width:45%;
+  margin:auto;
+}
+
+article.Text_Right {
+  padding-left: 0%;
+}
+
+#credit_Franz {
+ padding-left: 30%;
+}
+
+article.Text_Left {
+  padding-left:0%;
+}
+
+.Image_Right {
+  padding-left: 38%;
+  margin-top: -20%;
+  width: 25%;
+  height: 25%;
+  margin:auto;
+}
+
+#credit_Map_Europe {
+  padding-left: 39%;
+}
+
+#Fifth_Article {
+  padding-bottom: 100px;
+}
+
+#Evolution {
+  background-color: #f7fc00;
+  width: 80%;
+  margin:auto;
+text-align: center;
+}
+
+h1#Fifth_Header {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+#Evolution_Button {
+  color: #000000;
+  text-align: center;
+  margin-left: 50%;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#Noteworthy_Header{
+  margin-top:-15%;
+}
+
+#Noteworthy_Image {
+  width: 50%;
+  padding-bottom: 3em;
+}
+#Noteworth_Descriptiion{
+  font-size:20px;
+}
+#Blockades{
+  padding-left:0%;
+  margin-bottom:5%;
+}
+.button_screen{
+  
+   color: #000000;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 10px;
+}
+#Blockade_Map{
+  
+padding-left:40%;
+margin-top:-25%;
+margin-bottom:5%; 
+margin:auto;
+}
+.Trenches{
+  margin-top:2%;
+}
+#Trench_Overhead{
+  margin-top:2%;
+  width:30%;
+  padding-left:35%;
+}
+#Trench_Why{
+  padding-left:50%;
+  width:40%;
+  margin-top:10%;
+}
+#Trench_Dudes{
+margin-top:-20%;
+padding-left:15%;
+width:20%;
+}
+#Trench_Dudes_Under{
+  padding-left:15%;
+}
+#Man_Gun_Description{
+  padding-left:39%;
+}
+#Artillery_Tactic_Image{
+  padding-left:15%;
+
+}
+#Artillery{
+  padding-top:2%;
+}
+#Creeping_Barrage{
+  padding-top:10%;
+}
+.Header_Left{
+  padding-right:0%;
+  margin-bottom:-7%;
+}
+.Header_Right{
+  padding-left:0%;
+
+}
+#Winchester{
+  margin-top:2%;
+}
+#Trench_Gun{
+  margin-left:-5%;
+}
+#German_Protest{
+  margin-top:5%;
+}
+.Center{
+  padding-left:40%;
+}
+#Big_Willie{
+  margin-top:3%;
+}
+#Big_Willie_Size{
+  width:25%;
+  margin-left:-3%;
+}
+#Zeppilin{
+  width:25%;
+  margin-left:-3%;
+}
+#Game_Section{
+  background-color: #9E694A;
+  width:100%;
+  height:600px;
+  margin:auto;
+}
+#Shooting_Game_Start{
+  color: #000000;
+  background-color: #f7fc00;
+  text-align: center;
+  padding: 20px 100px;
+  font-size: 30px;
+  margin-left:29%;
+  display:block;
+  transition:all 0.5s;
+}
+#Shooting_Game_Start:hover{
+  color: #f7fc00;
+  background-color: #000000;
+  text-align: center;
+  padding: 30px 110px;
+  font-size: 30px;
+  margin-left:26.5%;
+  display:block;
+}
+
+#Quiz_Section{
+  width:50%;
+  margin-left: 25%;
+  text-align: center;
+  background-color: #9E694A;
+}
+.Answer_btn{
+  width:100%;
+  height:60px;
+  border:1px solid black;
+  padding:10px;
+  margin:10px 0;
+  text-align:left;
+  border-radius:4px;
+  cursor: pointer;
+  transition:all 0.9s;
+}
+.Answer_btn:hover:not([disabled]){
+  height:100px;
+  background-color: #000000;
+  color:white;
+}
+.btn:disabled{
+  cursor:no-drop;
+}
+#Next_Question{
+   background-color: #4A7F9E;
+  color: white;
+  font-weight:500;
+  width:150px;
+  border:0;
+  padding:10px;
+  margin:20px auto 0;
+  border-radius:4px;
+  cursor:pointer;
+  display:none;
+}
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/CrimsonText-Regular.ttf">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body onload="startup()">
+    <nav class="topnav">
+
+      
+            
+                <div class="Buttontop">
+
+                    <button id="butt1" onclick="TopFunction()">About</button>
+
+                </div>
+      
+              <div class="Buttontop">
+
+                    <button id="butt2" onclick="TopFunction()">Tactics</button>
+
+                </div>
+         
+            
+                <div class="Buttontop">
+
+                    <button id="butt3" onclick="TopFunction()">Technology</button>
+
+                </div>
+            
+                <div class="Buttontop">
+
+                    <button id="butt4" onclick="TopFunction()">Losses</button>
+
+                </div>
+           
+        
+    </nav>
+    <main>
+        <header id="headerText">
+            World War 1 101
+            <p id="Garry_Woo_Made_This">Made by Garry Woo</p>
+        </header>
+
+    </main>
+
+    <!-- First page -->
+    <section class="page" id="page1">
+        <section class="Scroll_Transition">
+            <h1 class="First_Header">
+                What is World War One?
+            </h1>
+            <article class="First_Article">
+                World War One was the first ever world war that took place, also known as the <b>Great war</b>,
+                partially
+                due to
+                the large number of lives lost in this war, approximately
+                a total of 17 million died as a result of this war, about 7 million of which are civilian deaths.
+            </article>
+        </section>
+
+        <h1 id="Second_Header">
+            Who took part in the War?
+        </h1>
+        <article id="Second_Article">
+            There were 2 sides, the <b>Allied</b> powers, which mainly consists of France, The United Kingdom,
+            Russia,
+            Italy, and the United states. And there is also the
+            <b>Central</b> powers, which mainly consisted of the German empire, Austria-Hungary and the Ottoman
+            Empire.
+        </article>
+        <img src="images/Map.png" id="Map">
+        <p id="ImageCredits">Image from Wikipedia</p>
+
+
+        <h1 id="Third_Header">
+            How did World War One start?
+        </h1>
+        <article class="Text_Right">
+            The Great War began on June 28, 1914, with the assassinations of Austrian Archduke Franz Ferdinand and
+            his
+            wife,
+            Sophie, while they were visiting Sarajevo,
+            Bosnia, a country recently annexed into the Austrian Empire. Many Bosnians and their Serbian neighbors
+            resented
+            this foreign rule and the Archduke's visit to Sarajevo provided
+            the opportunity for a small band of Serbian dissidents to strike back.
+        </article>
+        <br>
+        <img src="images/Franz_Ferdinand.png" class="Image_Left">
+        <p id="credit_Franz">Franz Ferdinand, the Archduke who got assassinatied.</p>
+
+
+        <article class="Text_Left">
+            Austria responded to the assassinations by teaming up with its ally, Germany, and declaring war on
+            Serbia.
+            The
+            conflict soon involved Russia, France and Belgium. Fearful of a full-scale world war
+            that would threaten its sea routes to other countries, Great Britain joined the fight against Germany
+            and
+            Austria.
+        </article>
+        <img src="images/Map_Before.png" class="Image_Right">
+        <p id="credit_Map_Europe">Map of Europe before WW1</p>
+
+        <div id="Buffer">
+
+        </div>
+        <h1 id="Fourth_Header">
+            How did World War One end?
+        </h1>
+        <article id="Fifth_Article">
+            Germany surrendered in 1918, with the leaders of the German army telling the German government to end the
+            fighting, the government asked the US for an armistice, which
+            is an agreement to end the fighting. So at the 11th hour on the 11th day of the 11th month of 1918, the
+            Great
+            War officially ended.
+        </article>
+
+        <section id="Evolution">
+            <h1 id="Fifth_Header">Noteworthy things from WW1</h1>
+            <h2 id="Noteworthy_Header">The Battle of Verdun</h2>
+
+            <img src="images/Verdun.png" id="Noteworthy_Image">
+            <p id="Noteworth_Descriptiion">
+                The battle of verdun is one of the longest, bloodiest, and most-ferocious battles of world war 1.
+                Casualties from the french are around 400,000, and the German ones are around 350,000. The french held
+                the line against the germain for
+                10 months, before the French finally obtained victory.
+            </p>
+            <div id="Bar">
+                <div id="Inner_Bar"></div>
+            </div>
+            <button id="Evolution_Button" onclick="next()">Next image</button>
+
+        </section>
+    </section>
+    <!-- Second page -->
+    <section class="page" id="page2">
+        <h1 class="First_Header">
+            New enemies comes new battle doctrines
+        </h1>
+        <article class="First_Article">
+            Many tactics were developed during this time, be it to combat other tactics developed by the other side, or
+            to catch enemies by surprise.
+            This page will show you some of the tactics that were used by both sides during the Great War.
+        </article>
+        <h1 id="Blockade">
+            Blockades
+        </h1>
+        <article id="Blockades">
+            This was a time where Troops transported goods via the ocean, so when german caught wind of this, they
+            attacked those supply lines.
+            Britian's Royal navy reacted this by planning a blockade against Gaermany, and while they cannot use close
+            blockades due to technological advancemence
+            (i.e, mines), they opped to focus on distant blockades.
+        </article>
+        <img src="images/British_Blockade.png" id="Blockade_Map">
+        <article id="Blockades_Pt2">
+            This British's ships primarily patrolled
+            <ol>
+                <li> The entrance to the North Sea between Scorland and Norway</li>
+                <li>The English Channel in the Dover Straits</li>
+            </ol>
+        </article>
+        <h1>
+            Trench Warfare
+        </h1>
+        <article class="Trenches">
+            Trench warfare is a type of land warfare, where troops utilize dug in lines and positions to safely traverse
+            to certain areas, while avoiding stray bullet fire.
+        </article>
+        <img src="images/Trench_Overhead.png" id="Trench_Overhead">
+        <article class="Trenches">
+            In the image above, we can see the trench having many zigzags, this is to reduce the chances of artillary
+            doing signifcant damage to not only the structure
+            of the trench, but also the things that are inside the trenches (The troops and weapons)
+        </article>
+        <article class="Trenches" id="Trench_Why">
+            Trenches became a favoured tactic with both sides, but it is usually associated with the Germans, due to
+            each side having a high reliance on Artillery.
+            Trenches were a necassity as it gave troops a way to protect themselves from the shockwaves of artillery
+            fire.
+        </article>
+        <img src="images/Dudes_In_Trenches.png" id="Trench_Dudes">
+        <p id="Trench_Dudes_Under">German soldiers inside their trenches</p>
+        <article class="Text_Left">
+            Unfortunately for those that rely on these trenches, Many weapons were developed during this time in an
+            attempt to "Sweep" These trenches clean of their enemies.
+        </article>
+        <img src="images/Man_Trench_Gun.png" class="Image_Right">
+        <p id="Man_Gun_Description">A soldier aiming a Trench Sweeper</p>
+        <h1>Artillery barrage</h1>
+        <article class="Text_Left" id="Artillery">
+            Artillery was most commonly used on the Western front, raining down high-explosive shells, shrapnel and
+            poison gas on the enemy. This artilley would not only
+            be very lethal, but it would also make the enemy's moral drop.
+        </article>
+        <img src="images/Artillery_Tactic.png" class="Image_Right">
+
+        <article class="Text_Right" id="Creeping_Barrage">
+            A tactic used was called <b>Creeping barrage</b>, where a line of infantry would be moving behind a line of
+            artillery fire. This line would usually move about 50 to
+            100 yards every few minutes moving forward slowly. If done correctly, this is a very devastating stratergy,
+            as it would force enemies back to their trenches while
+            the infantry behind the artilley fire can catch the enemies by surprise.
+        </article>
+        <img src="images/Creeping_Barrage.png" class="Image_Left" id="Creeping_Barrage_Image">
+        <article>
+            Unfortunately, this tactic is usually very difficult to pull off, as the artillery from the back has to be
+            in <b>Perfect</b> unison with
+            the infantry in the front. Most of the time, it ends up with either the artillery moving to slowly, causing
+            the artillery fire to land on their
+            own troops, or the infantry moves too fast, resulting in them getting caught in their own infantry.
+        </article>
+    </section>
+      <!-- Third page -->
+    <section class="page" id="page3">
+        <h1 class="First_Header">
+            Technology too advance for Mankind's own good
+        </h1>
+        <article>During this time, many advancements in technology were made and utilized. This page will show you some
+            of these pieces of technology used during
+            the war
+        </article>
+
+        <h1>Weapons</h1>
+
+        <h1 class="Header_Left">Lebel Model 1886 rifle</h1>
+        <article class="Text_Left">The Lebel Model was primarily used by the French military during WW1. It is an 8mm
+            bolt-action infantry
+            rifle that entered service in 1887. This rifle is the first rifle to utilize smokeless powder ammuunition.
+        </article>
+        <img src="images/Lebel_Mle._1886.jpg" class="Image_Right">
+
+        <h1 class="Header_Right">Winchester Model 1897</h1>
+        <article class="Text_Right" id="Winchester">The Winchester Model 1897, better known as the <b>Trench
+                Sweeper</b>, was feared by germans for its sheer brutallity. Chambered
+            in 12 gauge (Most of the time), this shotgun has the unique property to be slam fired, where the user can
+            just pull the trigger and continuesly rack the gun,
+            unloading the gun in seconds.
+        </article>
+        <img src="images/Trench_Gun.jpg" class="Image_Left" id="Trench_Gun">
+        <article id="German_Protest">This gun was so feared by the germans, yet so efficient, that many germans
+            protested the use of this gun, claiming that it "Violated the laws of war".</article>
+
+        <h1 class="Header_Left">Flammenwerfer M16</h1>
+        <article class="Text_Left">Despire protesting against the American's usage of the Trench Sweeper, the Germans
+            use this cruel machine called the flammerwerfer,
+            which is a flamethrower. This flamethrower is often used to clear trenches, and quite painfully, as burning
+            to death is often the most painful way to go out.
+        </article>
+        <img src="images/Flamethrower.jpg" class="Image_Right">
+        <h1>Vechicles</h1>
+        <h1 class="Header_Left">British Mark 1 tank (Little Willie)</h1>
+        <article class="Text_Left">The Mark 1 tank, better known as Little Willie was the first ever tank that was
+            invented and utilized in World war 1.
+            Its ability to bring troops into the frontline somewhat safely was revolutionary during this time of war.
+            Unfortunately, Little Willie
+            was slow, and it has difficulty moving over trenches.
+        </article>
+        <img src="images/Little_Willie.jpg" class="Image_Right">
+        <article id="Big_Willie">But this prototype was the catalyse to making Big willie, a tank that fixed the
+            previous problems of being unable to move over trenches, and now
+            sports some self defence weapons to deal with infantry.
+        </article>
+        <img src="images/Big_Willie.jpg" class="Center" id="Big_Willie_Size">
+        <p class="Center">Fun fact: Tanks have genders</p>
+        <h1 class="Header_Right">Artillery</h1>
+        <article class="Text_Right">Artillery is very devastating to line infantry, being able to shoot enemies
+            <b>Indirectly</b> from miles away, many armies utilize
+            artillery, be it the french and their <b>75mm field gun</b>, the British's <b>18 pounder</b>, or the
+            German's <b>Big bertha</b> (as shown in the image), it would almost be stupid not
+            to use artillery during this time. The heavy usage of artillery was also why trench warfare was so popular.
+        </article>
+        <img src="images/Artillery_Big.jpg" class="Image_Left">
+        <h1>Zeppilin</h1>
+        <article>Utilized by the Germans, the Zeppilin is a force to be reckoned with as it is able to drop bombs from
+            the sky, raining hellfire upon the troops that are on
+            the ground. Unfortunately all it took was one bullet to burst the air container for the Zeppilin to explode
+            and come crashing down </article>
+        <img src="images/Zeppilin.jpg" class="Center" id="Zeppilin">
+
+        <h1>Lets see you hit these targets using the weapons that the british used!
+            <br>(Careful not to shoot any medics, that would be a warcrime!)
+        </h1>
+        <h1 id="Shooting_Score">Score: Skibidi</h1>
+        <section id="Game_Section">
+            <h1 id="Timer">
+                <h1 id="Shooting_Game_h1">Shooting game</h1>
+                <button id="Shooting_Game_Start">Start</button>
+                <img src="images/Target.png" id="Target">
+                <img src="images/Medic.png" id="Medic">
+        </section>
+
+    </section>
+  <!-- Fourth page -->
+    <section class="page" id="page4">
+        <h1>There is always a price to pay</h1>
+        <article>War never changes in certain aspects, one of which is the innocent lives that are lost in war. Here are
+            some statistics</article>
+
+        <article class="Text_Left">Approximately 40 million casualties were made during world war 1, this number
+            includes both military and civilian casualties. And an estimate
+            15-22 million deaths were caused during this war.
+        </article>
+        <img src="images/British_Wounded.jpg" class="Image_Right">
+        <article>The countries that has lost the most soldiers are both Russia and France, with Russia loosing around
+            4.9 million troops, and france loosing 4.2 million
+            troops.
+        </article>
+
+        <article>The losses does not just extent to the lives lost. The amound of money that was spent and lost during
+            world war 1 is an estimated $125-186 <b>Billion</b>
+            in direct costs, and another $151 billion in indirect costs
+        </article>
+        <h1>How about a quiz to see what you have learnt so far :D</h1>
+        <section id="Quiz_Section">
+            <h1 id="Questions">Question goes here</h1>
+            <div id="Answer_Button">
+                <button class="Answer_btn">ans 1</button>
+                <button class="Answer_btn">ans 1</button>
+                <button class="Answer_btn">ans 1</button>
+                <button class="Answer_btn">ans 1</button>
+            </div>
+            <button id="Next_Question">Next</button>
+        </section>
+
+        
+
+    </section>
+        <button class="button_screen" id="btnFS">FullScreen</button>
+        <button class="button_screen" id="btnWS">Exit Full Screen</button>
+</body>
+
+</html>
