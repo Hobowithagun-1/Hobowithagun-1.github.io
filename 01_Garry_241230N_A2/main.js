@@ -175,6 +175,7 @@ TimerGo= setInterval(TimerStart,1000);
 game_Score.style.display="block";
 game_Score.innerHTML=`Targets shot: ${score_Gun_Game}`;
 }
+//Runs when the shooting game ends
 function gameEnd(){
   game_Timer.style.display="none";
   game_Target.style.display="none";
@@ -184,6 +185,7 @@ function gameEnd(){
   clearInterval(Target_Moving);
   clearInterval(TimerGo);
 }
+//Every second, subtracts one from the Seconds variable
 function TimerStart(){
   Seconds--;
   game_Timer.innerHTML=`Time left: ${Seconds} Seconds!`;
@@ -191,22 +193,23 @@ function TimerStart(){
   gameEnd();
 }
 }
+//When the target gets shot, adds 1 to the score
 function targetShot(){
   score_Gun_Game++;
   const GunShot= new Audio("audio/Gun_Sound.mp3");
   GunShot.play();
   game_Score.innerHTML=`Targets shot: ${score_Gun_Game}`;
 }
+//When a medic gets shot, subtracts 1 from the score
 function shotMedic(){
   score_Gun_Game--;
   const GunShot= new Audio("audio/Gun_Sound.mp3");
   GunShot.play();
   game_Score.innerHTML=`Targets shot: ${score_Gun_Game}`;
 }
+
 game_Target.addEventListener("click",targetShot);
 game_Medic.addEventListener("click",shotMedic);
-
-
 game_Start_Button.addEventListener("click",gameStart);
 
 
@@ -272,7 +275,7 @@ function startQuiz(){
   showQuestion();
 }
 
-//
+//To know which questions to show
 function showQuestion(){
   resetState();
   let currentQuestion=questions[currentQuestionIndex];
@@ -281,6 +284,7 @@ function showQuestion(){
 
   currentQuestion.Answer.forEach(answer);
 }
+//Puts the Answer options inside the Options
 function answer(Answer){
   const button=document.createElement("button");
   button.innerHTML=Answer.text;
@@ -292,13 +296,16 @@ function answer(Answer){
   button.addEventListener("click",selectAnswer);
 }
 
+//Hides the options of the questions
 function resetState(){
   nextButton.style.display="none";
   while(Answer_Button.firstChild){
     Answer_Button.removeChild(Answer_Button.firstChild);
   } 
 }
-
+//when a correct option is clicked, makes the button go green and make it so that
+//The other options cannot be clicked, and when a wrong option is clicked, it goes red,
+//while also making the correct answer green.
 function selectAnswer(e){
   const selectedBtn=e.target;
   const isCorrect=selectedBtn.dataset.correct==="true";
@@ -318,14 +325,14 @@ function selectAnswer(e){
  
   nextButton.style.display="block";
 }
-
+//to show how many questions they got right
 function showScore(){
     resetState();
     questionElement.innerHTML= `You scored ${score} out of 5!`;
     nextButton.innerHTML="Play Again";
     nextButton.style.display="block";
 }
-
+//To see either to show the next question or to show the score
 function handleNextButton(){
   currentQuestionIndex++;
   if(currentQuestionIndex<5){
