@@ -66,7 +66,7 @@ function next() {
   var width = Bar_Progress * 20;
   Bar_Progress++;
   var id = setInterval(frame, 10);
-  
+
   function frame() {
     if (width >= Bar_Progress * 20) {
       clearInterval(id);
@@ -113,104 +113,103 @@ function next() {
 }
 
 const game_Title = document.getElementById("Shooting_Game_h1");
-const game_Start_Button=document.getElementById("Shooting_Game_Start");
-const game_Target=document.getElementById("Target");
-const game_Medic=document.getElementById("Medic");
-const game_Score=document.getElementById("Shooting_Score");
-const game_Timer=document.getElementById("Timer");
-const game_Screen=document.getElementById("Game_Section");
-var Seconds=-1;
-var score_Gun_Game=0;
-var height=game_Screen.offsetHeight;
-var width=game_Screen.offsetWidth;
-var Target_Moving= setInterval(spawnTargets, 800);
-var TimerGo= setInterval(TimerStart,1000);
+const game_Start_Button = document.getElementById("Shooting_Game_Start");
+const game_Target = document.getElementById("Target");
+const game_Medic = document.getElementById("Medic");
+const game_Score = document.getElementById("Shooting_Score");
+const game_Timer = document.getElementById("Timer");
+const game_Screen = document.getElementById("Game_Section");
+var Seconds = -1;
+var score_Gun_Game = 0;
+var height = game_Screen.offsetHeight;
+var width = game_Screen.offsetWidth;
+var Target_Moving = setInterval(spawnTargets, 800);
+var TimerGo = setInterval(TimerStart, 1000);
 clearInterval(Target_Moving);
 clearInterval(TimerGo);
 //To initialize function to get a random number
-function GetRandom(min,max){
-return Math.round(Math.random() * (max - min)) + min;
+function GetRandom(min, max) {
+  return Math.round(Math.random() * (max - min)) + min;
 }
 
 
-var choose=GetRandom(0,1);
+var choose = GetRandom(0, 1);
 //To choose which image to spawn, either the Target, or the medic
-function WhichTargetToSpawn(){
-  choose=GetRandom(0,1);
-  if(choose>0)
-  {
-      spawnTargets();
+function WhichTargetToSpawn() {
+  choose = GetRandom(0, 1);
+  if (choose > 0) {
+    spawnTargets();
   }
-  else{
+  else {
     spawnMedic();
   }
 
 }
 //Function to spawn the medic and hide the target
-function spawnMedic(){
-  game_Medic.style.display="block";
-  game_Target.style.display="none";
-game_Medic.style.left = GetRandom(0, width-200) + "px";
-game_Medic.style.top = GetRandom(0, height-350) + "px";
+function spawnMedic() {
+  game_Medic.style.display = "block";
+  game_Target.style.display = "none";
+  game_Medic.style.left = GetRandom(0, width - 200) + "px";
+  game_Medic.style.top = GetRandom(0, height - 350) + "px";
 }
 //Function to spawn the Target and hide the medic
-function spawnTargets(){
-game_Target.style.display="block";
- game_Medic.style.display="none";
-game_Target.style.left = GetRandom(0, width-200) + "px";
-game_Target.style.top = GetRandom(0, height-350) + "px";
+function spawnTargets() {
+  game_Target.style.display = "block";
+  game_Medic.style.display = "none";
+  game_Target.style.left = GetRandom(0, width - 200) + "px";
+  game_Target.style.top = GetRandom(0, height - 350) + "px";
 }
 
 //Function to initialize the game
-function gameStart(){
-game_Timer.style.display="block";
-game_Title.style.display="none";
-game_Start_Button.style.display="none";
-Seconds=31;
-score_Gun_Game=0;
-//Starts the spawning
-Target_Moving= setInterval(WhichTargetToSpawn, 800);
-//Starts the timer countdown
-TimerGo= setInterval(TimerStart,1000);
-game_Score.style.display="block";
-game_Score.innerHTML=`Targets shot: ${score_Gun_Game}`;
+function gameStart() {
+  game_Timer.style.display = "block";
+  game_Title.style.display = "none";
+  game_Start_Button.style.display = "none";
+  Seconds = 31;
+  score_Gun_Game = 0;
+  //Starts the spawning
+  Target_Moving = setInterval(WhichTargetToSpawn, 800);
+  //Starts the timer countdown
+  TimerGo = setInterval(TimerStart, 1000);
+  game_Score.style.display = "block";
+  game_Score.innerHTML = `Targets shot: ${score_Gun_Game}`;
 }
 //Runs when the shooting game ends
-function gameEnd(){
-  game_Timer.style.display="none";
-  game_Target.style.display="none";
-  game_Title.innerHTML=`Your Score was ${score_Gun_Game}!`;
-  game_Title.style.display="block";
-  game_Start_Button.style.display="block";
+function gameEnd() {
+  game_Timer.style.display = "none";
+  game_Target.style.display = "none";
+  game_Title.innerHTML = `Your Score was ${score_Gun_Game}!`;
+  game_Title.style.display = "block";
+  game_Start_Button.style.display = "block";
   clearInterval(Target_Moving);
   clearInterval(TimerGo);
 }
 //Every second, subtracts one from the Seconds variable
-function TimerStart(){
+function TimerStart() {
   Seconds--;
-  game_Timer.innerHTML=`Time left: ${Seconds} Seconds!`;
-  if(Seconds===0){
-  gameEnd();
-}
+  game_Timer.innerHTML = `Time left: ${Seconds} Seconds!`;
+  if (Seconds === 0) {
+    gameEnd();
+  }
 }
 //When the target gets shot, adds 1 to the score
-function targetShot(){
+function targetShot() {
   score_Gun_Game++;
-  const GunShot= new Audio("audio/Gun_Sound.mp3");
+  const GunShot = new Audio("audio/Gun_Sound.mp3");
   GunShot.play();
-  game_Score.innerHTML=`Targets shot: ${score_Gun_Game}`;
+  game_Score.innerHTML = `Targets shot: ${score_Gun_Game}`;
 }
 //When a medic gets shot, subtracts 1 from the score
-function shotMedic(){
+function shotMedic() {
   score_Gun_Game--;
-  const GunShot= new Audio("audio/Gun_Sound.mp3");
+  const GunShot = new Audio("audio/Gun_Sound.mp3");
   GunShot.play();
-  game_Score.innerHTML=`Targets shot: ${score_Gun_Game}`;
+  game_Score.innerHTML = `Targets shot: ${score_Gun_Game}`;
 }
 
-game_Target.addEventListener("click",targetShot);
-game_Medic.addEventListener("click",shotMedic);
-game_Start_Button.addEventListener("click",gameStart);
+game_Target.addEventListener("click", targetShot);
+game_Medic.addEventListener("click", shotMedic);
+game_Start_Button.addEventListener("click", gameStart);
 
 
 //Quiz section
@@ -233,7 +232,7 @@ const questions = [
       { text: "Donald trump wanted to build a wall to block off mexico", correct: false },
     ]
   },
- {
+  {
     Questions: "Which battle during world war 1 caused the most amount of lives",
     Answer: [
       { text: "The battle of verdun", correct: true },
@@ -251,7 +250,7 @@ const questions = [
       { text: "There was a lack of mobility at the time", correct: false },
     ]
   },
- {
+  {
     Questions: "What was the main reason for using artillery",
     Answer: [
       { text: "It is cheap", correct: false },
@@ -261,107 +260,107 @@ const questions = [
     ]
   }
 ];
-const questionElement= document.getElementById("Questions");
-const Answer_Button= document.getElementById("Answer_Button");
-const nextButton= document.getElementById("Next_Question");
+const questionElement = document.getElementById("Questions");
+const Answer_Button = document.getElementById("Answer_Button");
+const nextButton = document.getElementById("Next_Question");
 
-let currentQuestionIndex=0;
-let score=0;
+let currentQuestionIndex = 0;
+let score = 0;
 //Function: To start the quiz and inizialize all these values
-function startQuiz(){
-  currentQuestionIndex=0;
-  score=0;
-  nextButton.innerHTML="Next";
+function startQuiz() {
+  currentQuestionIndex = 0;
+  score = 0;
+  nextButton.innerHTML = "Next";
   showQuestion();
 }
 
 //To know which questions to show
-function showQuestion(){
+function showQuestion() {
   resetState();
-  let currentQuestion=questions[currentQuestionIndex];
-  let questionNo=currentQuestionIndex+1;
-  questionElement.innerHTML=questionNo+". "+currentQuestion.Questions;
+  let currentQuestion = questions[currentQuestionIndex];
+  let questionNo = currentQuestionIndex + 1;
+  questionElement.innerHTML = questionNo + ". " + currentQuestion.Questions;
 
   currentQuestion.Answer.forEach(answer);
 }
 //Puts the Answer options inside the Options
-function answer(Answer){
-  const button=document.createElement("button");
-  button.innerHTML=Answer.text;
+function answer(Answer) {
+  const button = document.createElement("button");
+  button.innerHTML = Answer.text;
   button.classList.add("Answer_btn");
   Answer_Button.appendChild(button);
-  if(Answer.correct){
-    button.dataset.correct=Answer.correct;
+  if (Answer.correct) {
+    button.dataset.correct = Answer.correct;
   }
-  button.addEventListener("click",selectAnswer);
+  button.addEventListener("click", selectAnswer);
 }
 
 //Hides the options of the questions
-function resetState(){
-  nextButton.style.display="none";
-  while(Answer_Button.firstChild){
+function resetState() {
+  nextButton.style.display = "none";
+  while (Answer_Button.firstChild) {
     Answer_Button.removeChild(Answer_Button.firstChild);
-  } 
+  }
 }
 //when a correct option is clicked, makes the button go green and make it so that
 //The other options cannot be clicked, and when a wrong option is clicked, it goes red,
 //while also making the correct answer green.
-function selectAnswer(e){
-  const selectedBtn=e.target;
-  const isCorrect=selectedBtn.dataset.correct==="true";
-  if(isCorrect){
+function selectAnswer(e) {
+  const selectedBtn = e.target;
+  const isCorrect = selectedBtn.dataset.correct === "true";
+  if (isCorrect) {
     selectedBtn.classList.add("Correct");
     score++;
   }
-  else{
+  else {
     selectedBtn.classList.add("Incorrect");
   }
-  Array.from(Answer_Button.children).forEach(function(button) {
-  if (button.dataset.correct === "true") {
-    button.classList.add("Correct");
-  }
-  button.disabled = true;
-});
- 
-  nextButton.style.display="block";
+  Array.from(Answer_Button.children).forEach(function (button) {
+    if (button.dataset.correct === "true") {
+      button.classList.add("Correct");
+    }
+    button.disabled = true;
+  });
+
+  nextButton.style.display = "block";
 }
 //to show how many questions they got right
-function showScore(){
-    resetState();
-    questionElement.innerHTML= `You scored ${score} out of 5!`;
-    nextButton.innerHTML="Play Again";
-    nextButton.style.display="block";
+function showScore() {
+  resetState();
+  questionElement.innerHTML = `You scored ${score} out of 5!`;
+  nextButton.innerHTML = "Play Again";
+  nextButton.style.display = "block";
 }
 //To see either to show the next question or to show the score
-function handleNextButton(){
+function handleNextButton() {
   currentQuestionIndex++;
-  if(currentQuestionIndex<5){
+  if (currentQuestionIndex < 5) {
     showQuestion();
   }
-  else{
+  else {
     showScore();
   }
 }
 
-function nextButtonClicked(){
-  if(currentQuestionIndex<5){
+function nextButtonClicked() {
+  if (currentQuestionIndex < 5) {
     handleNextButton();
   }
-  else{
+  else {
     startQuiz();
   }
 }
-nextButton.addEventListener("click",nextButtonClicked);
+nextButton.addEventListener("click", nextButtonClicked);
 
 startQuiz();
 
-const btnFS=document.querySelector("#btnFS");
-const btnWS=document.querySelector("#btnWS");
-btnFS.addEventListener("click",enterFullscreen);
-btnWS.addEventListener("click",exitFullscreen);
+const btnFS = document.querySelector("#btnFS");
+const btnWS = document.querySelector("#btnWS");
+btnFS.addEventListener("click", enterFullscreen);
+btnWS.addEventListener("click", exitFullscreen);
 function enterFullscreen() { //must be called by user generated event
-document.documentElement.requestFullscreen();
+  document.documentElement.requestFullscreen();
 }
 function exitFullscreen() {
-document.exitFullscreen();
+  document.exitFullscreen();
 }
