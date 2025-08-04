@@ -358,6 +358,14 @@ width:20%;
 #Timer{
 display:none;
 }
+#QR_Header{
+  display:block;
+}
+#QR_code{
+display:block;
+width:25%;
+padding-left:36%;
+}
 @media(max-width:800px){
 .topnav button {
   color: #000000;
@@ -632,5 +640,12 @@ width:20%;
   border-radius:4px;
   cursor:pointer;
   display:none;
+}
+#QR_Header{
+  display:none;
+}
+#QR_code{
+display:none;
+
 }
 }
